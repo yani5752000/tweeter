@@ -1,0 +1,36 @@
+nav {
+  z-index: 2;
+
+
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+
+.tweeter {
+  font-family: Bungee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.angle-down {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.all {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fa-angle-double-down {
+  color: red;
+}
+
