@@ -81,5 +81,14 @@ const $html = `<article>
 
 
 $(document).ready(()=>{
+ $( "#form" ).submit(function( event ) {
+  event.preventDefault();
+  const data = $(form);
+
+  console.log("here is the ajax", data.serialize());
+  $.ajax("/tweets", {method: "POST", data: data.serialize()})
+
+  });
+
   renderTweets(data);
 })
