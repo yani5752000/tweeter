@@ -24,6 +24,9 @@ textarea {
   border-bottom: 5px solid grey;
 }
 
-output {
+#counter {
   font-family: Bungee;
+}
+#form {
+  margin-bottom: 4em;;
 }

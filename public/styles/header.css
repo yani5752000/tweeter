@@ -1,12 +1,13 @@
-header {
+#user-header {
   z-index: 0;
+  padding-top: 200px;
   background-color: #65bd00;
   background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
 .im {

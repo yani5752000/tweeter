@@ -31,6 +31,7 @@ body {
    width: 90%;
    background-color: #f4f1ec;
    display: flex;
+   flex-direction: column;
    margin: 0 auto;
    text-align: center;
  } 

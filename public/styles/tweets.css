@@ -1,0 +1,57 @@
+.newton-header {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tweeter-footer {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#handle {
+  margin-top: 1em;
+}
+
+#icons {
+  margin-top: 1em;
+}
+
+article:hover {
+  box-shadow: 10px 10px pink;
+}
+
+article {
+  border: solid 5px grey;
+  margin-bottom: 3em;
+}
+#tweets-message {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  display: flex;
+  justify-content: left;
+  border: none;
+  border-bottom: 5px solid grey;
+}
+
+#tweets-paragraph {
+  margin-left: 1.5em;
+}
+
+#tweet-icon:hover {
+  color: orange;
+}
+
+#newton {
+  display: flex;
+  flex-direction: row;
+}
+
+article span {
+  margin: 24px 0px;
+}
