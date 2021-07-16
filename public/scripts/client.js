@@ -69,11 +69,27 @@ $(document).ready(()=>{
   $("#form").submit(function( event ) {
     event.preventDefault();
     const formData = $(form);
+    let d = formData.serialize();
+    d = null;
+
+    console.log("d", d);
+    
+    if (d === null) {
+      alert("empty");
+      return;
+    }
+    if (d.length > 140) {
+      alert("more than 140 characters");
+      return;
+    }
     $.ajax("/tweets", {method: "POST", data: formData.serialize()})
       .then(function(){
         $(".tweet-container").empty();
         loadTweets();
     })
+      .catch((err)=>{
+          alert("empty")
+      })
   });
 
   //renderTweets(data);
