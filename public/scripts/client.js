@@ -69,9 +69,7 @@ $(document).ready(()=>{
   $("#form").submit(function( event ) {
     event.preventDefault();
     const formData = $(form);
-    const d = formData;
-    
-    if (d === null) {
+    if (formData === null) {
       alert("empty");
       return;
     }
@@ -83,6 +81,7 @@ $(document).ready(()=>{
       .then(function(){
         $(".tweet-container").empty();
         loadTweets();
+        formData[0].reset();
     })
       .catch((err)=>{
           alert("empty")
