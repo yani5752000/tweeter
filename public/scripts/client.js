@@ -69,16 +69,13 @@ $(document).ready(()=>{
   $("#form").submit(function( event ) {
     event.preventDefault();
     const formData = $(form);
-    let d = formData.serialize();
-    d = null;
-
-    console.log("d", d);
+    const d = formData;
     
     if (d === null) {
       alert("empty");
       return;
     }
-    if (d.length > 140) {
+    if (formData.serialize().length > 140) {
       alert("more than 140 characters");
       return;
     }
