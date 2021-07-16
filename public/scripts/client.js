@@ -4,14 +4,20 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-  const renderTweets = function(tweets) {
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
+const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
   tweets.forEach((tweetObj) => {
-      const $tweet = createTweetElement(tweetObj);
-      $(".tweet-container").prepend($tweet);
-    })
+    const $tweet = createTweetElement(tweetObj);
+    $(".tweet-container").prepend($tweet);
+  })
 }
 //outputs an article when given a tweet object
 const createTweetElement = function(tweetObj) {
@@ -37,7 +43,7 @@ const $html = `<article>
           
         </header>
         <div id="tweets-message">
-          <p id="tweets-paragraph">${text}</p> 
+          <p id="tweets-paragraph">${escape(text)}</p> 
         </div>
         
         <footer id="tweeter-footer">
