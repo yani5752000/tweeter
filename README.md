@@ -2,13 +2,11 @@
 
 Tweeter is a simple, single-page Twitter clon created by the student.
 
-## Final Product
+## Screenshots
 
-!["screenshot of login page"](https://github.com/yani5752000/tinyapp/blob/master/docs/login_page.png)
+!["screenshot of desktop size page"](https://github.com/yani5752000/tweeter/blob/master/docs/tweeter-desktop-page.png?raw=true)
 
-!["sceenshot of urls page after login"](https://github.com/yani5752000/tinyapp/blob/master/docs/urls_after_login.png#)
-
-!["screenshot of urls page before login"](https://github.com/yani5752000/tinyapp/blob/master/docs/urls_before_login.png)
+!["sceenshot of mobile size page"](https://github.com/yani5752000/tweeter/blob/master/docs/tweeter-mobile-page.png?raw=true)
 
 ## Getting Started
 
