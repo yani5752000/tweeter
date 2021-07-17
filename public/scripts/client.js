@@ -49,9 +49,9 @@ const $html = `<article>
         <footer id="tweeter-footer">
           <span>${creationTime}</span>
           <div id="icons">
-            <i id="tweet-icon" class="fa-solid fa-flag"></i>
-            <i id="tweet-icon" class="fa-solid fa-recycle"></i>
-            <i id="tweet-icon" class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
           
         </footer>
