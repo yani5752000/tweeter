@@ -35,3 +35,27 @@ body {
    margin: 0 auto;
    text-align: center;
  } 
+
+ /* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    margin-right: 20px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    margin-right: 20px;
+  }
+}

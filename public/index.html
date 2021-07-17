@@ -52,49 +52,50 @@
       
 
     </nav>
-    
-    <header id="user-header">
+    <div class="header-container">
+      <header id="user-header">
       
       
-      <div class="im">
-        <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div id="myname">
-          <h2>Farid Asadpour</h2>
-      </div>
-      
-      
-  </header>
-    
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div id="is-empty">
-          <h6>
-           it is empty
-          </h6>
+        <div class="im">
+          <img src="/images/profile-hex.png"> 
         </div>
-        <div id="exceeds">
-          <h6>
-           exceeds the limit of 140 characters
-          </h6>
+        <br>
+        <div id="myname">
+            <h2>Farid Asadpour</h2>
         </div>
-        <!-- <h2>Compose Tweet</h2> -->
-        <form id="form" action="/tweets" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
-          <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
-          <div class="submit">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
+        
+        
+      </header>
+      
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div id="is-empty">
+            <h6>
+             it is empty
+            </h6>
           </div>
-        </form>
-      </section>
-
-      <section class="tweet-container">
-      </section>
-    </main>
+          <div id="exceeds">
+            <h6>
+             exceeds the limit of 140 characters
+            </h6>
+          </div>
+          <!-- <h2>Compose Tweet</h2> -->
+          <form id="form" action="/tweets" method="POST">
+            <!-- <label for="tweet-text">What are you humming about?</label> -->
+            <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+            <div class="submit">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+  
+        <section class="tweet-container">
+        </section>
+      </main>
+    </div>
   </body>
 </html>
 
