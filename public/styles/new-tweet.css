@@ -30,3 +30,17 @@ textarea {
 #form {
   margin-bottom: 4em;;
 }
+
+#is-empty {
+  color: red;
+  border-width: 50px;
+  border: 5px solid red;
+  border-top: none;
+  
+}
+#exceeds {
+  color: red;
+  border-width: 50px;
+  border: 5px solid red;
+  border-top: none;
+}

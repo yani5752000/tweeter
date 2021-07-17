@@ -70,17 +70,21 @@ const loadTweets = function() {
 
 
 $(document).ready(()=>{
+  $("#is-empty").hide();
+  $("#exceeds").hide();
   loadTweets();
 
   $("#form").submit(function( event ) {
     event.preventDefault();
+    $("#is-empty").hide();
+    $("#exceeds").hide();
     const formData = $(form);
-    if (formData === null) {
-      alert("empty");
+    if (formData === null ) {
+      $("#is-empty").slideDown();
       return;
     }
     if (formData.serialize().length > 140) {
-      alert("more than 140 characters");
+      $("#exceeds").slideDown();
       return;
     }
     $.ajax("/tweets", {method: "POST", data: formData.serialize()})
@@ -90,9 +94,7 @@ $(document).ready(()=>{
         formData[0].reset();
     })
       .catch((err)=>{
-          alert("empty")
+          $("#is-empty").slideDown();
       })
   });
-
-  //renderTweets(data);
 })
