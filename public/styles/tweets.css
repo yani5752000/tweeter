@@ -40,10 +40,19 @@ article {
 }
 
 #tweets-paragraph {
-  margin-left: 1.5em;
+  width: 100%;
+  overflow-wrap: break-word;
 }
-
-#tweet-icon:hover {
+/* make the icon's colour orange when hovered on */
+#icon1:hover {
+  color: orange;
+}
+/* make the icon's colour orange when hovered on */
+#icon2:hover {
+  color: orange;
+}
+/* make the icon's colour orange when hovered on */
+#icon3:hover {
   color: orange;
 }
 
